@@ -1,14 +1,16 @@
 const Skills = () => {
   return (
     <section className="w-full flex flex-row place-content-center h-screen gap-[11rem] items-center">
-      <div className="flex flex-col font-bold">
+      <div className="flex flex-col font-bold gap-16">
         <img
           src="./src/assets/skills_image.png"
           alt="Skills"
           className="w-[21rem]"
         />
-        <p className="text-4xl">I DO A LOT OF</p>
-        <h1 className="text-[3rem]">THINGS.</h1>
+        <div>
+          <p className="text-4xl">I DO A LOT OF</p>
+          <h1 className="text-[3rem]">THINGS.</h1>
+        </div>
       </div>
       <div className="text-xl flex flex-col gap-3">
         <p>Arts.</p>

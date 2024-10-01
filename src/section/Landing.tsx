@@ -16,7 +16,7 @@ const Landing = () => {
               <h1 className="font-bold text-[6rem]">22:40</h1>
               <p>GMT+7</p>
             </div>
-            <div className="text-2xl">
+            <div className="text-xl">
               <p className="text-[1.5rem]">
                 But you can call me <b className="font-bold">ANYTIME</b>
               </p>
