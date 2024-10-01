@@ -1,7 +1,9 @@
+import BeamIcon from '@/components/BeamIcon'
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
+    <div className="font-geist bg-black">
+      <BeamIcon />
     </div>
   )
 }
