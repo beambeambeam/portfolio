@@ -7,7 +7,7 @@ const BeamIcon: FC<ComponentProps<'img'>> = ({ className, ...props }) => {
       src="./src/assets/BEAMBEAMBEAM.svg"
       alt="beam logo"
       {...props}
-      className={`${cn(className, 'aspect-auto w-42')}`}
+      className={`${cn(className, 'aspect-auto')}`}
     />
   )
 }
