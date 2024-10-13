@@ -1,5 +1,5 @@
-import Landing from '@/section/Landing'
-import Skills from '@/section/Skills'
+import Landing from '@/modules/Landing'
+import Skills from '@/modules/2_skills/Skills'
 
 const App = () => {
   return (
