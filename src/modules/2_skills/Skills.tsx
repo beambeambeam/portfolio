@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Skill } from '@/modules/2_skills/schema'
 import { motion } from 'framer-motion'
+import ViewDiv from '@/components/ViewDiv'
 
 type SkillIconProps = {
   icons: string[]
@@ -32,7 +33,7 @@ const Skills = () => {
 
   return (
     <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center ">
-      <motion.div
+      <ViewDiv
         className="flex flex-col font-bold gap-16 justify-self-end"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -60,8 +61,8 @@ const Skills = () => {
             </motion.h1>
           </div>
         </div>
-      </motion.div>
-      <motion.div
+      </ViewDiv>
+      <ViewDiv
         className="text-xl flex flex-col gap-3"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -79,7 +80,7 @@ const Skills = () => {
         <SkillIcons icons={['react_native', 'expo']} />
         <p>Datenwissenschaftler.</p>
         <SkillIcons icons={['python', 'pytorch', 'keras', 'huggingface']} />
-      </motion.div>
+      </ViewDiv>
     </section>
   )
 }
