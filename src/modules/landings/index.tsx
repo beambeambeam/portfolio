@@ -1,4 +1,4 @@
-import BeamIcon from '@/components/BeamIcon'
+import BeamIcon from '@/components/Icons/Beam'
 import ViewDiv from '@/components/ViewDiv'
 
 const Landing = () => {
