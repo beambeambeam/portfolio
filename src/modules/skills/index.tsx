@@ -46,7 +46,7 @@ const Skills = () => {
         <Picture
           src="/skills/skills_image.png"
           alt="Skills"
-          className="w-[21rem]"
+          className="w-[23rem]"
         />
         <div>
           <p className="text-4xl">I DO A LOT OF</p>
