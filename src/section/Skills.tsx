@@ -37,7 +37,7 @@ const SkillIcons = ({ icons }: SkillIconProps) => {
       {icons.map((icon, index) => (
         <img
           key={index}
-          src={`./src/assets/skills/${icon}.svg`}
+          src={`/skills/${icon}.svg`}
           alt={icon}
           className="h-16"
         />
