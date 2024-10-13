@@ -1,8 +1,17 @@
 import BeamIcon from '@/components/BeamIcon'
+import { motion } from 'framer-motion'
 
 const Landing = () => {
   return (
-    <section className="grid grid-rows-2 px-[6rem] h-screen">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{
+        once: true,
+      }}
+      className="grid grid-rows-2 px-[6rem] h-screen"
+    >
       <div className="flex h-full items-center">
         <BeamIcon className="h-[10vh]" />
       </div>
@@ -30,7 +39,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

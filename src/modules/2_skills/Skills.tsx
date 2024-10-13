@@ -11,7 +11,7 @@ const Skills = () => {
 
   const SkillIcons = ({ icons }: SkillIconProps) => {
     return (
-      <div className="flex flex-row gap-3 p-4">
+      <div className="flex flex-row gap-3 p-4 items-center">
         {icons.map((icon, index) => (
           <div
             className="w-fit h-fit"
@@ -31,8 +31,16 @@ const Skills = () => {
   }
 
   return (
-    <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center">
-      <div className="flex flex-col font-bold gap-16">
+    <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center ">
+      <motion.div
+        className="flex flex-col font-bold gap-16 justify-self-end"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{
+          once: true,
+        }}
+      >
         <img
           src="./src/assets/skills_image.png"
           alt="Skills"
@@ -52,8 +60,16 @@ const Skills = () => {
             </motion.h1>
           </div>
         </div>
-      </div>
-      <div className="text-xl flex flex-col gap-3">
+      </motion.div>
+      <motion.div
+        className="text-xl flex flex-col gap-3"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{
+          once: true,
+        }}
+      >
         <p>Arts.</p>
         <SkillIcons icons={['davinci', 'figma']} />
         <p>Full-stacl web dev.</p>
@@ -63,7 +79,7 @@ const Skills = () => {
         <SkillIcons icons={['react_native', 'expo']} />
         <p>Datenwissenschaftler.</p>
         <SkillIcons icons={['python', 'pytorch', 'keras', 'huggingface']} />
-      </div>
+      </motion.div>
     </section>
   )
 }
