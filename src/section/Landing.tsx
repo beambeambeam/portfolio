@@ -7,8 +7,6 @@ const Landing = () => {
         <BeamIcon className="h-[10vh]" />
       </div>
       <div className="flex flex-col">
-        <p className="opacity-50 text-[2rem]">/workspace/landing.txt</p>
-        <p className="text-[2rem]">~ -{'>'} fetch me</p>
         <div className="w-full h-fit grid grid-cols-2">
           <div className="grid grid-cols-[auto_auto] justify-start items-center">
             <div className="font-medium flex flex-col">
