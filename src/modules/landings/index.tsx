@@ -1,3 +1,4 @@
+import Clock from '@/components/Clock'
 import BeamIcon from '@/components/Icons/Beam'
 import ViewDiv from '@/components/ViewDiv'
 
@@ -9,10 +10,10 @@ const Landing = () => {
       </div>
       <div className="flex flex-col">
         <div className="w-full h-fit grid grid-cols-2">
-          <div className="grid grid-cols-[auto_auto] justify-start items-center">
+          <div className="grid grid-cols-[auto_auto] justify-start items-center gap-6">
             <div className="font-medium flex flex-col">
               <p>My Local Times.</p>
-              <h1 className="font-bold text-[6rem]">22:40</h1>
+              <Clock />
               <p>GMT+7</p>
             </div>
             <div className="text-xl">
@@ -26,8 +27,9 @@ const Landing = () => {
           <div className="flex items-end flex-col text-[2rem] text-end">
             <h1>Hi!, My friend call me Beam! I’m</h1>
             <h1>a student who passion in Software</h1>
-            <h1>Engineering, Design and An Terminator (Ai*)</h1>
-            <h2>Welcome to my Portfolio</h2>
+            <h1>Engineering, Design and Matamatics model</h1>
+            <h2>compute with Computer Ai*</h2>
+            <h2>Welcome to My Portfolio.</h2>
           </div>
         </div>
       </div>
