@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Skill } from '@/modules/2_skills/schema'
 import { motion } from 'framer-motion'
 import ViewDiv from '@/components/ViewDiv'
+import Picture from '@/components/Picture'
 
 type SkillIconProps = {
   icons: string[]
@@ -42,8 +43,8 @@ const Skills = () => {
           once: true,
         }}
       >
-        <img
-          src="./src/assets/skills_image.png"
+        <Picture
+          src="/skills/skills_image.png"
           alt="Skills"
           className="w-[21rem]"
         />
