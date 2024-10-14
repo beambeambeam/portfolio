@@ -5,7 +5,7 @@ import Exp from '@/modules/exp'
 
 const App = () => {
   return (
-    <div className="font-geist bg-black text-white">
+    <div className="bg-black font-geist text-white">
       <Landing />
       <div className="pb-[12rem]">
         <Skills />

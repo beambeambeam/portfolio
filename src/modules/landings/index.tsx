@@ -4,14 +4,14 @@ import ViewDiv from '@/components/ViewDiv'
 
 const Landing = () => {
   return (
-    <ViewDiv className="grid grid-rows-2 px-[6rem] h-screen">
+    <ViewDiv className="grid h-screen grid-rows-2 px-[6rem]">
       <div className="flex h-full items-center">
         <BeamIcon className="h-[10vh]" />
       </div>
       <div className="flex flex-col">
-        <div className="w-full h-fit grid grid-cols-2">
-          <div className="grid grid-cols-[auto_auto] justify-start items-center gap-6">
-            <div className="font-medium flex flex-col">
+        <div className="grid h-fit w-full grid-cols-2">
+          <div className="grid grid-cols-[auto_auto] items-center justify-start gap-6">
+            <div className="flex flex-col font-medium">
               <p>My Local Times.</p>
               <Clock />
               <p>GMT+7</p>
@@ -24,7 +24,7 @@ const Landing = () => {
               <p>BANGKOK, THAILAND</p>
             </div>
           </div>
-          <div className="flex items-end flex-col text-[2rem] text-end">
+          <div className="flex flex-col items-end text-end text-[2rem]">
             <h1>Hi!, My friend call me Beam! I’m</h1>
             <h1>a student who passion in Software</h1>
             <h1>Engineering, Design and Matamatics model</h1>

@@ -12,7 +12,7 @@ const Clock = () => {
   }, [])
 
   return (
-    <h1 className="font-bold text-[6rem]">
+    <h1 className="text-[6rem] font-bold">
       {value.getHours().toString().padStart(2, '0')}:
       {value.getMinutes().toString().padStart(2, '0')}
     </h1>

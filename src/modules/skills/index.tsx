@@ -18,11 +18,11 @@ const Skills = () => {
 
   const SkillIcons = ({ icons }: SkillIconProps) => {
     return (
-      <div className="flex flex-row gap-3 p-4 items-center">
+      <div className="flex flex-row items-center gap-3 p-4">
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="w-fit h-fit relative group"
+            className="group relative h-fit w-fit"
             onMouseEnter={() => {
               setHoverOn(icon as Skill)
             }}
@@ -34,12 +34,12 @@ const Skills = () => {
             <img
               src={`/skills/${icon}.svg`}
               alt={icon}
-              className="h-full aspect-auto invisible absolute top-0 left-0 group-hover:visible"
+              className="invisible absolute left-0 top-0 aspect-auto h-full group-hover:visible"
             />
             <img
               src={`/skills/${icon}.svg`}
               alt={icon}
-              className="h-full aspect-auto brightness-50 visible group-hover:invisible"
+              className="visible aspect-auto h-full brightness-50 group-hover:invisible"
             />
           </div>
         ))}
@@ -48,9 +48,9 @@ const Skills = () => {
   }
 
   return (
-    <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center">
+    <section className="grid h-screen w-full grid-cols-2 place-content-center items-center gap-[11rem]">
       <ViewDiv
-        className="flex flex-col font-bold gap-16 justify-self-end"
+        className="flex flex-col gap-16 justify-self-end font-bold"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
@@ -67,7 +67,7 @@ const Skills = () => {
           <p className="text-4xl">I DO A LOT OF</p>
           <div className="h-fit overflow-y-hidden">
             <motion.h1
-              className="text-[3rem] uppercase overflow-y-hidden absolute"
+              className="absolute overflow-y-hidden text-[3rem] uppercase"
               initial={{ y: -50, rotateX: 90, translateZ: 0, opacity: 0 }}
               animate={{ y: 0, rotateX: 0, translateZ: 180, opacity: 1 }}
               key={hoverOn}
@@ -79,9 +79,9 @@ const Skills = () => {
               {hoverOn === 'none' ? 'things' : hoverOn.replace('_', ' ')}.
             </motion.h1>
           </div>
-          <div className="h-fit overflow-y-hidden absolute">
+          <div className="absolute h-fit overflow-y-hidden">
             <motion.h1
-              className="text-[3rem] uppercase overflow-y-hidden"
+              className="overflow-y-hidden text-[3rem] uppercase"
               initial={{ y: 0, rotateX: 0, translateY: 0 }}
               animate={{
                 rotateX: -90,
@@ -99,7 +99,7 @@ const Skills = () => {
         </div>
       </ViewDiv>
       <ViewDiv
-        className="text-xl flex flex-col gap-3"
+        className="flex flex-col gap-3 text-xl"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
