@@ -10,6 +10,11 @@ type SkillIconProps = {
 
 const Skills = () => {
   const [hoverOn, setHoverOn] = useState<Skill>('none')
+  const [prevHover, setPrevHover] = useState<Skill>('none')
+
+  if (prevHover === hoverOn) {
+    setPrevHover('none')
+  }
 
   const SkillIcons = ({ icons }: SkillIconProps) => {
     return (
@@ -17,8 +22,13 @@ const Skills = () => {
         {icons.map((icon, index) => (
           <div
             className="w-fit h-fit"
-            onMouseEnter={() => setHoverOn(icon as Skill)}
-            onMouseLeave={() => setHoverOn('none')}
+            onMouseEnter={() => {
+              setHoverOn(icon as Skill)
+            }}
+            onMouseLeave={() => {
+              setHoverOn('none')
+              setPrevHover(icon as Skill)
+            }}
           >
             <img
               key={index}
@@ -33,7 +43,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center ">
+    <section className="w-full grid grid-cols-2 place-content-center h-screen gap-[11rem] items-center">
       <ViewDiv
         className="flex flex-col font-bold gap-16 justify-self-end"
         initial={{ opacity: 0 }}
@@ -52,16 +62,33 @@ const Skills = () => {
           <p className="text-4xl">I DO A LOT OF</p>
           <div className="h-fit overflow-y-hidden">
             <motion.h1
-              className="text-[3rem] uppercase overflow-y-hidden"
-              initial={{ y: -50, rotateX: 90 }}
-              animate={{ y: 0, rotateX: 0 }}
+              className="text-[3rem] uppercase overflow-y-hidden absolute"
+              initial={{ y: -50, rotateX: 90, translateZ: 0, opacity: 0 }}
+              animate={{ y: 0, rotateX: 0, translateZ: 180, opacity: 1 }}
               key={hoverOn}
-              transition={{ duration: 0.35 }}
+              transition={{ duration: 0.5 }}
               style={{
                 color: colorMapSkill[hoverOn],
               }}
             >
               {hoverOn === 'none' ? 'things' : hoverOn.replace('_', ' ')}.
+            </motion.h1>
+          </div>
+          <div className="h-fit overflow-y-hidden absolute">
+            <motion.h1
+              className="text-[3rem] uppercase overflow-y-hidden"
+              initial={{ y: 0, rotateX: 0, translateY: 0 }}
+              animate={{
+                rotateX: -90,
+                translateY: 20,
+              }}
+              key={prevHover}
+              transition={{ duration: 0.5 }}
+              style={{
+                color: colorMapSkill[prevHover],
+              }}
+            >
+              {prevHover === 'none' ? 'things' : prevHover.replace('_', ' ')}.
             </motion.h1>
           </div>
         </div>
