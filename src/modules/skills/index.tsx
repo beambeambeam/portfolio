@@ -12,7 +12,7 @@ const Skills = () => {
   const [hoverOn, setHoverOn] = useState<Skill>('none')
   const [prevHover, setPrevHover] = useState<Skill>('none')
 
-  if (prevHover === hoverOn) {
+  if (prevHover === hoverOn && prevHover !== 'none') {
     setPrevHover('none')
   }
 
@@ -21,7 +21,8 @@ const Skills = () => {
       <div className="flex flex-row gap-3 p-4 items-center">
         {icons.map((icon, index) => (
           <div
-            className="w-fit h-fit"
+            key={index}
+            className="w-fit h-fit relative group"
             onMouseEnter={() => {
               setHoverOn(icon as Skill)
             }}
@@ -31,10 +32,14 @@ const Skills = () => {
             }}
           >
             <img
-              key={index}
               src={`/skills/${icon}.svg`}
               alt={icon}
-              className="h-full aspect-auto"
+              className="h-full aspect-auto invisible absolute top-0 left-0 group-hover:visible"
+            />
+            <img
+              src={`/skills/${icon}.svg`}
+              alt={icon}
+              className="h-full aspect-auto brightness-50 visible group-hover:invisible"
             />
           </div>
         ))}
