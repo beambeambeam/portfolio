@@ -14,7 +14,6 @@
   "dependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@fontsource/geist-sans": "^5.1.0",
     "@types/node": "^22.7.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.8",

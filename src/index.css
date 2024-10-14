@@ -1,5 +1,66 @@
-@import '@fontsource/geist-sans';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-100-normal.tff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-200-normal.tff') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-300-normal.tff') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-400-normal.tff') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-500-normal.tff') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-600-normal.tff') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-700-normal.tff') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-800-normal.tff') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('/fonts/geist-sans-latin-900-normal.tff') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
