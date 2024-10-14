@@ -5,7 +5,7 @@ import Skills from '@/modules/skills'
 
 const App = () => {
   return (
-    <div className="bg-black font-geist text-white">
+    <div className="bg-black text-white">
       <Landing />
       <div className="pb-[12rem]">
         <Skills />
