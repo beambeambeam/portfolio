@@ -1,6 +1,5 @@
-import { motion } from 'framer-motion'
 import { ComponentProps, FC, ReactNode } from 'react'
-import { MotionProps } from 'framer-motion'
+import { motion, MotionProps } from 'framer-motion'
 
 const ViewDiv: FC<
   ComponentProps<'div'> &

@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { colorMapSkill, Skill } from '@/modules/skills/schema'
 import { motion } from 'framer-motion'
-import ViewDiv from '@/components/ViewDiv'
+
 import Picture from '@/components/Picture'
+import ViewDiv from '@/components/ViewDiv'
 
 type SkillIconProps = {
   icons: string[]
