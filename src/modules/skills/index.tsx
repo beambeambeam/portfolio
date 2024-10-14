@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Skill } from '@/modules/skills/schema'
+import { colorMapSkill, Skill } from '@/modules/skills/schema'
 import { motion } from 'framer-motion'
 import ViewDiv from '@/components/ViewDiv'
 import Picture from '@/components/Picture'
@@ -57,6 +57,9 @@ const Skills = () => {
               animate={{ y: 0, rotateX: 0 }}
               key={hoverOn}
               transition={{ duration: 0.35 }}
+              style={{
+                color: colorMapSkill[hoverOn],
+              }}
             >
               {hoverOn === 'none' ? 'things' : hoverOn.replace('_', ' ')}.
             </motion.h1>
