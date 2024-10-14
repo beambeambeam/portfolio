@@ -7,9 +7,13 @@ const App = () => {
   return (
     <div className="font-geist bg-black text-white">
       <Landing />
-      <Skills />
+      <div className="pb-[12rem]">
+        <Skills />
+      </div>
       <Edu />
-      <Exp />
+      <div className="py-[18rem]">
+        <Exp />
+      </div>
     </div>
   )
 }
