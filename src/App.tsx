@@ -13,10 +13,12 @@ const App = () => {
       <Navbar />
       <div className="bg-black text-white font-sans absolute w-full">
         <Landing />
-        <div className="pb-[12rem]">
+        <div className="pb-[12rem] my-[10rem]">
           <Skills />
         </div>
-        <Edu />
+        <div className="my-[10rem]">
+          <Edu />
+        </div>
         <div className="py-[10rem]">
           <Exp />
         </div>
