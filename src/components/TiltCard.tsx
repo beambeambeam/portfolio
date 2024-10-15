@@ -10,7 +10,7 @@ type TiltCardProps = {
   children: ReactNode
 }
 
-const ROTATION_RANGE = 32.5
+const ROTATION_RANGE = 20
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2
 
 const TiltCard = ({ children }: TiltCardProps) => {
@@ -60,7 +60,7 @@ const TiltCard = ({ children }: TiltCardProps) => {
     >
       <div
         style={{
-          transform: 'translateZ(10px)',
+          transform: 'translateZ(55px)',
           transformStyle: 'preserve-3d',
         }}
         className="flex flex-row items-center gap-5"
