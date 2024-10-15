@@ -11,20 +11,22 @@ const App = () => {
   return (
     <div className="absolute w-full">
       <Navbar />
-      <div className="bg-black text-white font-sans absolute w-full">
+      <main className="bg-black text-white font-sans absolute w-full">
         <Landing />
-        <div className="pb-[12rem] my-[10rem]">
+        <section className="pb-[12rem] my-[10rem]">
           <Skills />
-        </div>
-        <div className="my-[10rem]">
+        </section>
+        <section className="my-[10rem]">
           <Edu />
-        </div>
-        <div className="py-[10rem]">
+        </section>
+        <section className="py-[10rem]">
           <Exp />
-        </div>
-        <Contact />
-        <Footer />
-      </div>
+        </section>
+        <section className="pb-[16rem]">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
     </div>
   )
 }
