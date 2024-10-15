@@ -28,13 +28,25 @@ const Exp = () => {
   return (
     <ViewDiv className="flex h-screen w-full flex-col items-center justify-center">
       <div className="flex w-[60%] flex-col gap-[4.6rem]">
-        <Section align="start" className="text-2xl font-light">
+        <Section align="start" className="text-2xl font-light opacity-50">
           ~/workspace/experience
         </Section>
         <div className="flex w-full flex-col gap-[0.75rem]">
           <Section align="between">
-            <p className="text-2xl font-light">~ -{'>'} JULY 2024 - TODAYS</p>
-            <p className="text-2xl font-light">3 MONTH</p>
+            <p className="text-2xl font-light">
+              ~ -{'>'}{' '}
+              {new Date('2024-07-01')
+                .toLocaleString('default', { month: 'long' })
+                .toUpperCase()}{' '}
+              {new Date().getFullYear()} - TODAYS
+            </p>
+            <p className="text-2xl font-light">
+              {Math.floor(
+                (new Date().getTime() - new Date('2024-07-01').getTime()) /
+                  (1000 * 60 * 60 * 24 * 30)
+              )}{' '}
+              MONTH
+            </p>
           </Section>
           <Section align="end" className="text-2xl font-bold">
             FRONTEND DEVELOPER @WIRABYTE
@@ -43,7 +55,11 @@ const Exp = () => {
         <div className="flex w-full flex-col gap-[0.75rem]">
           <Section align="between" className="text-2xl font-light">
             <p>~ -{'>'} 2020 - TODAYS</p>
-            <p>4 YEARS</p>
+            {Math.floor(
+              (new Date().getTime() - new Date('2020-01-01').getTime()) /
+                (1000 * 60 * 60 * 24 * 365)
+            )}{' '}
+            YEAR
           </Section>
           <Section align="end" className="text-2xl font-bold">
             SELF-TAUGHT GRAPHIC DESIGS, WEB DEV & DS
