@@ -3,7 +3,7 @@ import ViewDiv from '@/components/ViewDiv'
 
 const Edu = () => {
   return (
-    <ViewDiv className="grid h-screen w-full grid-cols-12 ">
+    <ViewDiv className="grid h-screen w-full grid-cols-12" id="education">
       <div className="col-span-7 flex justify-center items-center">
         <Picture src="/edu/uni.png" alt="Education" className="aspect-auto " />
       </div>

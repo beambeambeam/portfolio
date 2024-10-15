@@ -4,7 +4,7 @@ import ViewDiv from '@/components/ViewDiv'
 
 const Landing = () => {
   return (
-    <ViewDiv className="grid h-screen grid-rows-2 px-[6rem]">
+    <ViewDiv className="grid h-screen grid-rows-2 px-[6rem]" id="landing">
       <div className="flex h-full items-center">
         <BeamIcon className="h-[10vh]" />
       </div>

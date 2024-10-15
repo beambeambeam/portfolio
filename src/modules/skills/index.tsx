@@ -49,7 +49,10 @@ const Skills = () => {
   }
 
   return (
-    <section className="grid h-screen w-full grid-cols-2 place-content-center items-center gap-[11rem]">
+    <section
+      className="grid h-screen w-full grid-cols-2 place-content-center items-center gap-[11rem]"
+      id="skills"
+    >
       <ViewDiv
         className="flex flex-col gap-16 justify-self-end font-bold"
         initial={{ opacity: 0 }}

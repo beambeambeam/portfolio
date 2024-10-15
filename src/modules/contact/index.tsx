@@ -16,7 +16,10 @@ const Contacts = [
 
 export const Contact = () => {
   return (
-    <ViewDiv className="h-screen w-full grid grid-rows-[1fr_3fr_1fr] px-[6vw] py-[10vh] my-[10vh]">
+    <ViewDiv
+      className="h-screen w-full grid grid-rows-[1fr_3fr_1fr] px-[6vw] py-[10vh] my-[10vh]"
+      id="contact"
+    >
       <div className="text-[2rem]">
         <h1 className="font-bold">CONTACT ME!</h1>
         <h2 className="font-light">You can call me Beam!</h2>

@@ -26,7 +26,10 @@ const Exp = () => {
   }
 
   return (
-    <ViewDiv className="flex h-screen w-full flex-col items-center justify-center">
+    <ViewDiv
+      className="flex h-screen w-full flex-col items-center justify-center"
+      id="experience"
+    >
       <div className="flex w-[60%] flex-col gap-[4.6rem]">
         <Section align="start" className="text-2xl font-light opacity-50">
           ~/workspace/experience
