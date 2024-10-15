@@ -3,13 +3,11 @@ import ViewDiv from '@/components/ViewDiv'
 
 const Edu = () => {
   return (
-    <ViewDiv className="grid h-screen w-full grid-cols-[auto_1fr]">
-      <Picture
-        src="/edu/uni.png"
-        alt="Education"
-        className="aspect-auto h-screen"
-      />
-      <div className="start flex h-full w-full flex-col justify-center gap-2 px-12">
+    <ViewDiv className="grid h-screen w-full grid-cols-12 ">
+      <div className="col-span-7 flex justify-center items-center">
+        <Picture src="/edu/uni.png" alt="Education" className="aspect-auto " />
+      </div>
+      <div className="start flex h-full w-full flex-col justify-center gap-2 px-12 col-span-5">
         <h1 className="text-4xl">EDUCATION</h1>
         <div className="text-2xl">currently &lt;3 at</div>
         <p className="text-2xl">
