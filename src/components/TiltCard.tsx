@@ -10,7 +10,7 @@ type TiltCardProps = {
   children: ReactNode
 }
 
-const ROTATION_RANGE = 37.5
+const ROTATION_RANGE = 32.5
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2
 
 const TiltCard = ({ children }: TiltCardProps) => {
@@ -35,7 +35,7 @@ const TiltCard = ({ children }: TiltCardProps) => {
     const mouseX = (e.clientX - rect.left) * ROTATION_RANGE
     const mouseY = (e.clientY - rect.top) * ROTATION_RANGE
 
-    const rX = mouseY / height - HALF_ROTATION_RANGE
+    const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1
     const rY = mouseX / width - HALF_ROTATION_RANGE
 
     x.set(rX)
@@ -56,9 +56,17 @@ const TiltCard = ({ children }: TiltCardProps) => {
         transformStyle: 'preserve-3d',
         transform,
       }}
-      className="flex flex-row items-center gap-5"
+      className="relative "
     >
-      {children}
+      <div
+        style={{
+          transform: 'translateZ(10px)',
+          transformStyle: 'preserve-3d',
+        }}
+        className="flex flex-row items-center gap-5"
+      >
+        {children}
+      </div>
     </motion.div>
   )
 }
