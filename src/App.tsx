@@ -25,8 +25,8 @@ const App = () => {
         <section className="pb-[16rem]">
           <Contact />
         </section>
+        <Footer />
       </main>
-      <Footer />
     </div>
   )
 }
