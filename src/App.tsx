@@ -1,11 +1,11 @@
 import { Contact } from '@/modules/contact'
 import Edu from '@/modules/edu'
 import Exp from '@/modules/exp'
-import Landing from '@/modules/landings'
-import Navbar from '@/modules/Navbar'
+import Landing from '@/modules/landing'
 import Skills from '@/modules/skills'
 
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 const App = () => {
   return (

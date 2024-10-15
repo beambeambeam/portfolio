@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { colorMapSkill, Skill } from '@/modules/skills/schema'
+import { colorMapSkill, Skill } from '@/libs/schema'
 import { motion } from 'framer-motion'
 
 import Picture from '@/components/Picture'
