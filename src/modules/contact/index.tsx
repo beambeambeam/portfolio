@@ -1,3 +1,4 @@
+import Link from '@/components/Link'
 import Picture from '@/components/Picture'
 import TiltCard from '@/components/TiltCard'
 import ViewDiv from '@/components/ViewDiv'
@@ -35,17 +36,7 @@ export const Contact = () => {
         </div>
         <div className="flex flex-col justify-center gap-8">
           {Contacts.map((item) => {
-            return (
-              <div className="text-2xl">
-                <div className="font-bold">[{item.title}]</div>
-                <button
-                  onClick={() => navigator.clipboard.writeText(item.links)}
-                  className="cursor-pointer font-light text-gray-400"
-                >
-                  ({item.links})
-                </button>
-              </div>
-            )
+            return <Link links={item.links} title={item.title} />
           })}
         </div>
       </div>
